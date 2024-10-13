@@ -6,21 +6,23 @@ html{
     font-family: 'Quicksand', sans-serif;
 }
 .header{
-    display: flex;
+    display: block;
     background-color: #232222;
     color: white;
     padding:10px;
     font-size: 18px;
+    height: 40px;
 }
 .p1,.p2{
     margin-left:5% ;
+    float: left;
 }
 .p2{
     text-decoration: none;
     color: white;
 }
 .p3{
-    margin-left: 50%;
+    float: right;
 }
 
 i.ti-mobile, i.ti-email, i.ti-user{
