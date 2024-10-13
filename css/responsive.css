@@ -1,0 +1,102 @@
+/* màn hình ipad hoặc lap nhỏ */
+@media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .p1, .p2, .p3 {
+        margin: 5px 0;
+    }
+    
+    ul.header-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    ul.header-ul li {
+        margin: 10px;
+    }
+    .news {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .support {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact {
+        grid-template-columns: 1fr;
+    }
+    .contact-left{
+        height: 310px;
+    }
+    .contact-left, .contact-right {
+        margin: 15px 0;
+    }
+    
+    footer {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .ft-sp, .ft-link, .ft-logo, .ft-cs {
+        margin: 20px;
+        width: calc(50% - 40px);
+    }
+}
+
+/* màn hình điện thoại */
+@media screen and (max-width: 768px) {
+    .text {
+        bottom: 50px;
+        margin-left: 20px;
+    }
+    
+    .text1 {
+        font-size: 30px;
+    }
+    
+    .text2 {
+        font-size: 20px;
+        margin-left: 30px;
+    }
+    
+    .news {
+        grid-template-columns: 1fr;
+    }
+    
+    .support {
+        grid-template-columns: 1fr;
+    }
+    
+    input.input-ct, input.input-ct1 {
+        width: 90%;
+    }
+    
+    button.btn-ct {
+        width: 30%;
+    }
+    
+    .ft-sp, .ft-link, .ft-logo, .ft-cs {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* thiết bị có màn hình rất nhỏ */
+@media screen and (max-width: 480px) {
+    #search {
+        width: 200px;
+    }
+    
+    .text1 {
+        font-size: 24px;
+    }
+    
+    .text2 {
+        font-size: 18px;
+    }
+}

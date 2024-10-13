@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Quicksand', sans-serif;
+}
+.header{
+    display: flex;
+    background-color: #232222;
+    color: white;
+    padding:10px;
+    font-size: 18px;
+}
+.p1,.p2{
+    margin-left:5% ;
+}
+.p2{
+    text-decoration: none;
+    color: white;
+}
+.p3{
+    margin-left: 50%;
+}
+
+i.ti-mobile, i.ti-email, i.ti-user{
+    font-weight: 500;
+    line-height: 1.2;
+}
+.navigation{
+    background-color: white ;
+}
+ul.header-ul{
+    display: flex;
+    list-style: none;
+    justify-content: right;
+    align-items: center;
+}
+ul.header-ul li{
+    margin-right: 30px;
+    font-size: 18px;
+}
+img.logo{
+    width: 100px;
+    height: 100px;
+}
+.imgbanner{
+    display: block;
+    width:100%;
+}
+.slide{
+    position: relative;
+    overflow: hidden;
+}
+#search{
+    width: 300px;
+    padding: 10px;
+    border-style: hidden;
+    border-radius: 50px;
+    border: 1px solid gray;
+    outline: none;
+}
+button.ti-search{
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    right: 40px;
+    top: 2px;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    background-color: transparent;
+}
+i.ti-shopping-cart{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+.text{
+    position: absolute;
+    bottom:260px;
+    color: white;
+    margin-left: 100px;
+    overflow: hidden;
+}
+.text1{
+    font-size:50px;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    /* overflow: hidden; */
+
+}
+.text2{
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top:10px;
+}
+h2{
+    text-align: center;
+    color: orange;
+    margin: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 7fr; /* Cột hàng trên: 3:7 */
+    grid-template-rows: auto auto;  /* Hai hàng */
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+/* Đặt cột đầu tiên của hàng 2 chiếm 7 phần, cột thứ 2 chiếm 3 phần */
+.row-2 {
+    grid-column: 1 / 3; /* Để hàng thứ hai được chia lại*/
+    display: grid;
+    grid-template-columns: 7fr 3fr; /* Hàng thứ hai chia theo 7:3 */
+    grid-gap: 10px;
+}
+
+.item {
+    width: 100%;
+    height: 250px;
+    object-fit:cover;
+}
+.line{
+    border: 1px solid black;
+    margin:5px 18% 0 18%;
+}
+.news{
+    display: grid;
+    grid-template-columns:33.33% 33.33% 33.33%;
+    grid-template-rows: auto;
+    grid-gap: 5px;
+    padding: 0 20px 20px 20px;
+}
+.item1{
+    width: 99%;
+    height: 83%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+p.textnews{
+    margin-top: 10px;
+    font-size: small;
+    font-weight: 550;
+}
+.support{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    color: white;
+    padding-left: 20px;
+
+}
+div.support-item{  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    height: 100px;
+    margin: 0px 20px 20px 0px;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+div.support-item:hover{
+    transform: scale(1.1);
+}
+
+i.ti-truck, i.ti-reload, i.ti-package, i.ti-check-box{
+    font-size: 40px;
+    margin-right: 30px;
+    
+}
+p.sp-text{
+    font-size: small;
+}
+h4.sp-text1{
+    margin-left: 55px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.contact-left{
+    background-color: #e8e8e8;
+    margin-right: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+}
+
+img.img-ct{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+}
+input.input-ct{
+    margin: 10px;
+    padding: 7px;
+    width: 45%;
+    outline: none;
+    border: hidden;
+    border-radius: 5px;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+
+}
+input.input-ct1{
+    margin: 10px;
+    width: 45%;
+    border: hidden;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+}
+button.btn-ct{
+    margin-top: 10px;
+    border: hidden;
+    height: 8%;
+    width: 12%;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 
+        0px 10px 10px rgba(0, 0, 0, 0.2),
+        0px 20px 20px rgba(0, 0, 0, 0.2), 
+        0px 30px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+button.btn-ct:hover{
+    letter-spacing: 6px;
+    background-color: gray;
+}
+footer{
+    display: flex;
+    background-color: rgb(37, 37, 53);
+    height: 250px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.ft-sp, .ft-link, .ft-logo, .ft-cs{
+    margin-right: 60px;
+}
+.ft-sp{
+    margin-top:25px;
+    line-height: 2;
+    overflow: hidden;  
+}
+.ft-logo{
+        text-align: center;
+        font-family:'Times New Roman', Times, serif ;
+        font-style: italic;
+        margin-bottom: 40px;
+}
+.ct-ft{
+    color: orange;
+    font-size: larger;
+}
+
+img.img-ft{
+    width: 150px;
+    height: 150px;
+    
+}
+ul.ft-ul{
+    list-style: square;
+    padding: 17px;
+    font-size: large;
+}
+.marquee{
+    background-color: pink;
+    behavior: alternate;
+    height: 110px;
+}
